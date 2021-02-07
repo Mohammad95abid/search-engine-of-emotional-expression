@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Emotional Search Engine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        /* background and animated title */
+        @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Codystar';
+            background: black;
+            background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+
+        .neons {
+            margin-top: 10rem;
+            text-align: center;
+        }
+
+        .neons h1 {
+            font-size: 3rem;
+            text-align: center;
+            font-weight: bold;
+            -webkit-animation: glow 2s ease-in-out infinite alternate;
+            -moz-animation: glow 2s ease-in-out infinite alternate;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                color: #fff;
+                text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+            } 
+            to {
+                color: gray;
+                text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+            }
+        }
+
+        /* search box design */
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        .form{
+            display: flex; 
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .search{
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+
+        .searchTerm{
+            width: 100%;
+            border: 3px solid #00B4CC;
+            border-right: none;
+            padding: 5px;
+            height: 20px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #9DBFAF;
+        }
+
+        .searchTerm:focus{
+            color: #00B4CC;
+        }
+
+        .searchButton{
+            width: 40px;
+            height: 36px;
+            border: 1px solid #00B4CC;
+            background: #00B4CC;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .wrap{
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* margin-top: 110px; */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+               <div class="neons col-12">
+                  <h1><em> Emotional Words Search Engine - IR Course </em></h1>
+               </div>
+            </div>
+         </div>
+    </header>
+    <br><br><br><br>
+    <div class="wrap">
+        <div class="search">
+            <form class="form" action="/search" method="POST">
+                <input name="search_field" type="text" class="searchTerm" placeholder="Write emotional words to search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
