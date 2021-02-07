@@ -6,11 +6,14 @@ anger_index_dir = 'Resources/My-Dataset/Inverted-Indexes/anger_index.json'
 trust_terms_index_dir = 'Resources/My-Dataset/Inverted-Indexes/trust_terms_index.json'
 trust_emotional_pairs_index_dir = 'Resources/My-Dataset/Inverted-Indexes/trust_emotional_pairs_index.json'
 sentences_documents_index_dir = 'Resources/My-Dataset/Inverted-Indexes/sentences_documents_index.json'
+files_path = "Resources/My-Dataset/Clean-DB/"
+
 
 
 def load_json_file( file_path ):
     with open( file_path ) as json_file:
         return json.load(json_file)
+
 
 anger_index = load_json_file( anger_index_dir )
 trust_terms_index = load_json_file( trust_terms_index_dir )
@@ -71,3 +74,14 @@ def search_query( query :str ) -> list:
 
     result = list( set( result1 + result2 + result3 ) )
     return result
+
+
+
+def get_file_path( document_name: str ):
+    if document_name in sentences_documents_index:
+        return files_path, sentences_documents_index[document_name] 
+    return None, None
+
+
+if __name__ == "__main__":
+    print( get_file_path("sdf") )

@@ -85,7 +85,7 @@
             <li><a href="#"> No Results, Pleasse try another query! </a></li>
             {% endif %}
             {% for res in search_results %}
-            <li><a href="#"> {{ res }} </a></li>
+            <li><a href="/show_document/{{res}}"> {{ res }} </a></li>
             {% endfor %}
         </ol>
     </div>
