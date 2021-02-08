@@ -22,6 +22,7 @@ An idea behind this practical assignment is to let student practice material tha
 
 <a href="https://ibb.co/3BG68PS"><img src="https://i.ibb.co/MMWwjJP/search-engine.gif" alt="search-engine" border="0"></a>
 
+<img src="https://i.ibb.co/MMWwjJP/search-engine.gif" alt="search-engine" border="0">
 
 ### Dashboard
 
