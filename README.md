@@ -20,9 +20,7 @@ An idea behind this practical assignment is to let student practice material tha
 
 ### Search Engine
 
-<a href="https://ibb.co/3BG68PS"><img src="https://i.ibb.co/MMWwjJP/search-engine.gif" alt="search-engine" border="0"></a>
-
-<img src="https://i.ibb.co/MMWwjJP/search-engine.gif" alt="search-engine" border="0">
+<a href="https://gifyu.com/image/VpIj"><img src="https://s2.gifyu.com/images/search_engine.gif" alt="search_engine.gif" border="0" /></a>
 
 ### Dashboard
 
