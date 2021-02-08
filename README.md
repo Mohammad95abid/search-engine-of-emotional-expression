@@ -1,10 +1,10 @@
 # search-engine-of-emotional-expression
 
-## Motivation
+### Motivation
 
 An idea behind this practical assignment is to let student practice material that was learnt during the semester and will enrich the students’ IR understanding and even encourage the students to continue to study this area. 
 
-## Task purpose
+### Task purpose
 * Given an emotional lexicon and a few texts you have to:
   1. Tokenize the text while splitting it into sentences.
   2. Remove HTML tags (you may have to).
@@ -18,17 +18,17 @@ An idea behind this practical assignment is to let student practice material tha
 * Provide a graphical visualization comparing the emotional distribution of the different texts.
 
 
-## Search Engine
+### Search Engine
 
 <a href="https://ibb.co/3BG68PS"><img src="https://i.ibb.co/MMWwjJP/search-engine.gif" alt="search-engine" border="0"></a>
 
 
-## Dashboard
+### Dashboard
 
 <a href="https://ibb.co/Q8BgXph"><img src="https://i.ibb.co/jVKNHbq/dashboard.gif" alt="Dashboard" border="0"></a>
 
 
-## setup and using
+### setup and using
 
 1. Clone the project in your local machine using git clone https://github.com/Mohammad95abid/search-engine-of-emotional-expression.git.
 2. Run this statement, "pip install -r requirements.txt" OR "pip3 install -r requirements.txt", in terminal to install necessary modules.
