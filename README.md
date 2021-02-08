@@ -22,9 +22,10 @@ An idea behind this practical assignment is to let student practice material tha
 
 <a href="https://gifyu.com/image/VpIj"><img src="https://s2.gifyu.com/images/search_engine.gif" alt="search_engine.gif" border="0" /></a>
 
+
 ### Dashboard
 
-<a href="https://ibb.co/Q8BgXph"><img src="https://i.ibb.co/jVKNHbq/dashboard.gif" alt="Dashboard" border="0"></a>
+<a href="https://gifyu.com/image/VpIF"><img src="https://s2.gifyu.com/images/dashboard.gif" alt="dashboard.gif" border="0" /></a>
 
 
 ### setup and using
