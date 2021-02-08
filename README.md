@@ -33,12 +33,12 @@ An idea behind this practical assignment is to let student practice material tha
 1. Clone the project in your local machine using git clone https://github.com/Mohammad95abid/search-engine-of-emotional-expression.git.
 2. Run this statement, "pip install -r requirements.txt" OR "pip3 install -r requirements.txt", in terminal to install necessary modules.
 3. To show the dashboard:
-  &nbsp;&nbsp;* Run the dashboard_maker.py module.
-  &nbsp;&nbsp;* Browse this IP address http://127.0.0.1:8050/ .
+  <br/>&nbsp;&nbsp;* Run the dashboard_maker.py module.
+  <br/>&nbsp;&nbsp;* Browse this IP address http://127.0.0.1:8050/ .
 
 4. To use the search engine app.
-  &nbsp;&nbsp;* Run the server.py module.
-  &nbsp;&nbsp;* Browse this IP address http://127.0.0.1:5002/ .
+  <br/>&nbsp;&nbsp;* Run the server.py module.
+  <br/>&nbsp;&nbsp;* Browse this IP address http://127.0.0.1:5002/ .
   
 5. Enjoy, Thank You :)
 
