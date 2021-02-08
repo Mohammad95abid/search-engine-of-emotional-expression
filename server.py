@@ -24,7 +24,6 @@ def show_document( document_name ):
     if filename is None:
         return redirect('/', code = 302)
     return send_file( directory + filename )
-    # return send_from_directory( directory = directory, filename = filename, mimetype='application/txt')
 
 
 
