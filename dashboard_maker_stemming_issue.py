@@ -139,7 +139,7 @@ def make_summary_table_fig():
 
     fig = go.Figure(
                         data = [ 
-                                go.Table(   columnwidth = [0.15 * width, 0.35 * width, 0.18 * width, 0.15 * width, 0.15 * width],
+                                go.Table(   columnwidth = [0.25 * width, 0.25 * width, 0.18 * width, 0.15 * width],
                                             header = dict( 
                                                 values = titles,
                                                 line_color = 'darkslategray',
@@ -160,7 +160,7 @@ def make_summary_table_fig():
                                         )
                             ] 
                     )
-    fig.update_layout( title_text = '<b> 6) Summary </b>' )
+    fig.update_layout( title_text = '<b> 6) Summary </b>', height = 600 )
     return fig
 
 
