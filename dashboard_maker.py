@@ -15,8 +15,8 @@ app = dash.Dash( __name__ )
 
 # a function to make trust words chart figure
 def make_trust_words_fig():
-    trust_words_fig = px.bar( dashboard_data['trust_words_data'], x = 'Trust Words', y = 'Appearance Amount', 
-                    hover_data = ['Trust Words', 'Appearance Amount'], color = 'Trust Words', 
+    trust_words_fig = px.bar( dashboard_data['trust_words_data'], x = 'Trust Words', y = 'Number of appearances', 
+                    hover_data = ['Trust Words', 'Number of appearances'], color = 'Trust Words', 
                     labels = { 'pop': 'Appearance of Trust Words' }, height = 400,
                     title = '<b> 1) Appearance of trust words in the given dataset </b>'
                 )
@@ -27,10 +27,10 @@ def make_trust_words_fig():
 def make_emotional_pairs_fig():
     trust_emotional_pairs_fig = px.scatter( 
                                             dashboard_data['trust_emotional_pairs_data'],
-                                            x = 'Trust-Emotional Pairs', y = 'Appearance Amount',
+                                            x = 'Trust-Emotional Pairs', y = 'Number of appearances',
                                             color = 'Trust-Emotional Pairs', 
                                             title = '<b> 2) Appearance of the trust-emotional pairs </b>',
-                                            size='Appearance Amount', hover_data=['Appearance Amount'] 
+                                            size='Number of appearances', hover_data=['Number of appearances'] 
                                       )
     return trust_emotional_pairs_fig
 
@@ -66,7 +66,7 @@ def make_emotional_words_fig():
 def make_existing_emotion_words_fig():
     fig = px.pie(   
                     dashboard_data['existing_emotional_words_data'] , 
-                    values = 'Appearance Amount', names = 'Existing-Emotional-Words',
+                    values = 'Number of appearances', names = 'Existing-Emotional-Words',
                     title = '<b> 4) Percentage of existing emotion words in the given dataset </b>'
                 )
     fig.update_traces( 
@@ -79,7 +79,7 @@ def make_existing_emotion_words_fig():
 # a function to make trust words chart figure
 def make_existing_trust_words_fig():
     labels = dashboard_data['existing_trust_words_data']['Existing-Trust-Words']
-    values = dashboard_data['existing_trust_words_data']['Appearance Amount']
+    values = dashboard_data['existing_trust_words_data']['Number of appearances']
     fig = go.Figure( data = [ go.Pie( labels = labels, values = values, hole = .6 ) ] )
     fig.update_traces( 
         textposition = 'inside', 
